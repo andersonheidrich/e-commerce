@@ -46,30 +46,3 @@ const Cart = ({ cart, removeFromCart, removeAllFromCart }) => {
 };
 
 export default Cart;
-
-// import React from "react";
-
-// function Cart({ cart, removeFromCart }) {
-//   const total = cart.reduce((acc, item) => acc + item.price, 0);
-
-//   return (
-//     <div>
-//       <h2>Carrinho de Compras</h2>
-//       {cart.length === 0 ? (
-//         <p>O carrinho está vazio.</p>
-//       ) : (
-//         <div>
-//           {cart.map((item, index) => (
-//             <div key={index}>
-//               <p>{item.name} - R${item.price}</p>
-//               <button onClick={() => removeFromCart(item.id)}>Remover</button>
-//             </div>
-//           ))}
-//           <h3>Total: R${total}</h3>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Cart;
