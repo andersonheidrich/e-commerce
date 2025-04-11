@@ -42,7 +42,6 @@ export const Menu = styled.div`
   .user-menu-item {
     display: flex;
     font-weight: bold;
-    /* color: #1e3a5f; */
     color: black;
     padding: 8px;
     margin: 0 8px 16px 8px;
@@ -53,7 +52,6 @@ export const Menu = styled.div`
 
     &:hover {
       color: #ff8c00;
-      /* background-color: #1e3a5f; */
       background-color: black;
     }
   }
@@ -95,38 +93,4 @@ export const Menu = styled.div`
       }
     }
   }
-
-  /* .input-menu {
-    display: flex;
-    width: 500px;
-    height: 40px;
-    justify-content: center;
-    margin: 0 8px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #1e3a5f;
-  } */
-
-  /* .submenu {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 4px;
-    border-radius: 4px;
-    position: absolute;
-    top: 100%;
-  } */
-
-  /* .submenu-item {
-    display: flex;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    font-size: 16px;
-
-    &:hover {
-      color: #ff8c00;
-      background-color: #1e3a5f;
-    }
-  } */
 `;

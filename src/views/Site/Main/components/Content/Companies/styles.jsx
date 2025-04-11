@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  height: 120vh;
   justify-content: center;
   align-items: center;
+  margin-top: 164px;
   width: 100%;
-  height: 100%;
 
   .row {
     display: grid;
@@ -40,8 +41,6 @@ export const Container = styled.div`
       height: 200px;
       min-width: 10%;
       min-height: 10%;
-      /* width: 80%;
-      height: auto; */
     }
 
     span {
