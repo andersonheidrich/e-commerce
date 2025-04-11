@@ -10,7 +10,6 @@ export const SwiperStyle = styled(Swiper)`
   justify-content: center;
   align-items: center;
   background-color: white;
-  margin-top: 40px;
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -30,7 +29,6 @@ export const SlideStyle = styled(SwiperSlide)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 0 16px 0 60px; */
   }
 
   .slide-title {
@@ -47,8 +45,8 @@ export const SlideStyle = styled(SwiperSlide)`
   }
 
   .slide-image {
-    margin-top: 40px;
     width: 400px;
     height: 400px;
+    cursor: pointer;
   }
 `;
