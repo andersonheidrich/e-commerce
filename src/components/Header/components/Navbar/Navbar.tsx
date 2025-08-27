@@ -4,6 +4,7 @@ const Navbar = () => {
   const links = [
     { href: "/", label: "Início" },
     { href: "/produtos", label: "Produtos" },
+    { href: "/sobre", label: "Sobre" },
   ];
 
   return (

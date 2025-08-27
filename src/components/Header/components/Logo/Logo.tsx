@@ -12,7 +12,7 @@ const Logo = () => {
         alt="Logo"
         width={64}
         height={64}
-        className="cursor-pointer"
+        className="cursor-pointer min-w-16 min-h-16"
         onClick={() => router.push("/")}
       />
     </div>
