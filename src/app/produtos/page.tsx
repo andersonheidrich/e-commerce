@@ -1,5 +1,9 @@
-import { Products } from "@/components";
+import { ProductList } from "@/features/product/components";
 
 export default function ProductsPage() {
-  return <Products />;
+  return (
+    <div className="flex w-full min-h-screen justify-center items-center">
+      <ProductList />
+    </div>
+  );
 }
