@@ -16,7 +16,7 @@ export default function ProductCard({
   return (
     <div
       key={id}
-      className="flex flex-col justify-between items-center w-70 h-85 p-2 border-2 rounded-lg"
+      className="flex flex-col justify-between items-center w-70 h-85 p-2 border-2 border-black rounded-lg"
     >
       <div className="flex min-w-40 min-h-40 items-center">
         <Image
@@ -31,13 +31,13 @@ export default function ProductCard({
         {title}
       </span>
       <span className="flex justify-center items-center">
-        R$ {price.toFixed(2)}
+        $ {price.toFixed(2)}
       </span>
       <Button
         className="flex justify-center items-center min-w-22 min-h-8 cursor-pointer rounded bg-blue-600 hover:bg-blue-700 text-white"
         onClick={() => addToCart({ id, title, image, price, quantity })}
       >
-        Adicionar
+        Add
       </Button>
     </div>
   );

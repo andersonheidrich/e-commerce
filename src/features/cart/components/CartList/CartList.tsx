@@ -12,8 +12,8 @@ export default function CartList() {
     <div className="flex flex-col w-full min-h-screen items-center mt-20 gap-4">
       <div className="font-bold mt-8">
         {cart.length === 0
-          ? `Você não possui itens no carrinho!`
-          : `Você possui ${cart.length} itens no carrinho!`}
+          ? `You have no items in your cart!!`
+          : `You have ${cart.length} items in your cart!`}
       </div>
       <div className="flex flex-col w-280 justify-start items-start p-4 gap-4">
         {cart.map((item) => (
@@ -29,12 +29,12 @@ export default function CartList() {
       </div>
       {cart.length > 0 && (
         <div className="mt-6">
-          <p className="font-semibold">Total: R$ {total.toFixed(2)}</p>
+          <p className="font-semibold">Total: $ {total.toFixed(2)}</p>
           <Button
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded mt-3 cursor-pointer"
+            className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded mt-3 cursor-pointer"
             onClick={clearCart}
           >
-            Finalizar compra
+            Buy!
           </Button>
         </div>
       )}

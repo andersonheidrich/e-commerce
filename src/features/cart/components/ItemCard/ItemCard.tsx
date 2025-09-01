@@ -29,7 +29,7 @@ export default function ItemCard({
         />
         <div className="flex flex-col">
           <span className="font-semibold">{title}</span>
-          <span className="text-gray-500">R$ {price}</span>
+          <span className="text-gray-500">$ {price}</span>
           <div className="flex p-2 gap-3 justify-between items-center w-20 h-6 rounded-lg border-2">
             <Minus className="w-5 h-5 cursor-pointer" />
             <span className="text-[16px] font-bold">{quantity}</span>
