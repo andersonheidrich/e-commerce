@@ -1,5 +1,5 @@
 "use client";
-import { Product } from "@/features/product/types";
+import { Product } from "@/types/types";
 import { Button } from "@/components";
 import Image from "next/image";
 import { useStore } from "@/store/useStore";

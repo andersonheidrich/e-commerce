@@ -22,7 +22,7 @@ export default function ProductList() {
   return (
     <div className="flex flex-col w-full min-h-screen justify-start items-center mt-28">
       <span className="text-2xl font-bold capitalize">
-        {category ? category : "Todos os produtos"}
+        {category ? category : "All products"}
       </span>
 
       <div className="flex flex-wrap w-320 gap-12 py-12">

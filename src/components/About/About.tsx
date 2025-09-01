@@ -2,31 +2,31 @@ export default function About() {
   return (
     <div className="flex flex-col w-full justify-center items-center mt-20">
       <div className="flex flex-col w-[300px] min-[500px]:w-[400px] min-[640px]:w-[500px] min-[768px]:w-[656px] min-[1024px]:w-[872px] min-[1280px]:w-[1088px] min-[1536px]:w-[1304px] min-h-screen items-start font-bold py-12">
-        <span className="mb-8 text-[32px]">Sobre Nós</span>
+        <span className="mb-8 text-[32px]">About Us</span>
         <span className="mb-8 text-[24px]">
-          Bem-vindo ao nosso e-commerce de consoles e PCs!
+          Welcome to your ultimate destination for consoles and PCs!
         </span>
         <span className="mb-8">
-          Somos apaixonados por tecnologia e entretenimento, e nosso objetivo é
-          oferecer a você a melhor experiência na hora de escolher seu próximo
-          console, computador ou acessório gamer.
+          We`re passionate about technology and gaming, and our mission is
+          simple: to make choosing your next console, PC, or gaming accessory an
+          exciting and effortless experience.
         </span>
         <span className="mb-8">
-          Aqui, você encontra desde os consoles mais populares do mercado até
-          PCs de alto desempenho, montados para atender tanto jogadores casuais
-          quanto os que buscam performance máxima. Trabalhamos com produtos
-          originais, garantia de qualidade e um catálogo sempre atualizado com
-          as últimas novidades do mundo dos games e da informática.
+          From the hottest consoles on the market to high-performance custom
+          PCs, we`ve got you covered — whether you`re a casual gamer or chasing
+          peak performance. Every product in our catalog is original, reliable,
+          and carefully selected to keep you up-to-date with the latest in
+          gaming and tech.
         </span>
         <span className="mb-8">
-          Nosso compromisso vai além da venda: queremos que cada cliente tenha
-          confiança na sua compra e sinta a segurança de estar adquirindo
-          produtos confiáveis, com suporte e atendimento de qualidade.
+          But we don`t just sell products — we build trust. We want every
+          customer to feel confident and secure with their purchase, knowing
+          they`re getting quality products backed by excellent support.
         </span>
         <span>
-          Seja para jogar, trabalhar ou turbinar sua máquina, estamos aqui para
-          conectar você à tecnologia que transforma momentos em experiências
-          inesquecíveis.
+          Whether you`re gaming, working, or upgrading your setup, we`re here to
+          connect you with technology that transforms ordinary moments into
+          unforgettable experiences.
         </span>
       </div>
     </div>

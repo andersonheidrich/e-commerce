@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Product } from "@/features/product/types";
+import { Product } from "@/types/types";
 
 type CartItem = Product & { quantity: number };
 

@@ -15,20 +15,20 @@ const Dropdown = () => {
 
   return (
     <div className="relative group">
-      <Button className="cursor-pointer px-2">Produtos ▾</Button>
+      <Button className="cursor-pointer px-2">Products ▾</Button>
       <ul className="w-40 absolute hidden group-hover:block bg-white shadow-lg rounded p-2 justify-center">
         <li
           className="py-2 hover:bg-gray-100 cursor-pointer"
-          onClick={() => router.push("/produtos")}
+          onClick={() => router.push("/products")}
         >
-          Todos
+          All Products
         </li>
         {categories.map((cat) => (
           <li
             key={cat}
             className="py-2 hover:bg-gray-100 cursor-pointer capitalize"
             onClick={() =>
-              router.push(`/produtos?category=${encodeURIComponent(cat)}`)
+              router.push(`/products?category=${encodeURIComponent(cat)}`)
             }
           >
             {cat}

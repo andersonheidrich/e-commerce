@@ -1,6 +1,6 @@
 "use client";
-import { useStore } from "../../../../store/useStore";
-import { Product } from "@/features/product/types";
+import { useStore } from "@/store/useStore";
+import { Product } from "@/types/types";
 import { Button } from "@/components";
 import Image from "next/image";
 

@@ -1,4 +1,4 @@
-import { Account, Cart, Navbar } from "./components";
+import { Cart, Navbar, UserLogin } from "./components";
 
 const Header = () => {
   return (
@@ -6,7 +6,7 @@ const Header = () => {
       <Navbar />
       <div className="flex gap-8">
         <Cart />
-        <Account />
+        <UserLogin />
       </div>
     </div>
   );

@@ -3,9 +3,9 @@ import Dropdown from "../Dropdown";
 
 const Navbar = () => {
   const links = [
-    { href: "/", label: "Início" },
-    { href: "/produtos", label: "Produtos" },
-    { href: "/sobre", label: "Sobre" },
+    { href: "/", label: "Home" },
+    { href: "/products", label: "Products" },
+    { href: "/about", label: "About" },
   ];
 
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
       <ul className="flex gap-8 justify-center items-center">
         {links.map(({ href, label }) => (
           <li key={href}>
-            {label === "Produtos" ? (
+            {label === "Products" ? (
               <Dropdown />
             ) : (
               <Link

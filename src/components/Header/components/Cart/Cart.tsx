@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <ShoppingCart
       className="min-w-7 min-h-7 cursor-pointer text-black"
-      onClick={() => router.push("/carrinho")}
+      onClick={() => router.push("/cart")}
     />
   );
 };
