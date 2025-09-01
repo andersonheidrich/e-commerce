@@ -17,7 +17,7 @@ export default function ItemCard({
   return (
     <div
       key={id}
-      className="flex w-full justify-between items-center h-30 p-2 shadow rounded-lg"
+      className="flex w-full justify-between items-center h-26 p-2 shadow rounded-lg"
     >
       <div className="flex items-center gap-4">
         <Image

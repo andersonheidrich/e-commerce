@@ -27,7 +27,7 @@ export default function ProductCard({
           className="cursor-pointer max-w-40 max-h-40"
         />
       </div>
-      <span className="flex justify-center items-center font-bold">
+      <span className="flex justify-center items-center font-bold px-2">
         {title}
       </span>
       <span className="flex justify-center items-center">
