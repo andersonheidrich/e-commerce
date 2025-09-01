@@ -1,35 +1,27 @@
 "use client";
-import { products } from "../../types";
-import { useStore } from "../../store/products";
-import Image from "next/image";
-import { Button } from "@/components";
+import { useStore } from "@/store/useStore";
+import { useEffect } from "react";
+import ProductCard from "../ProductCard";
 
 export default function ProductList() {
-  const addToCart = useStore((state) => state.addToCart);
+  const { products, fetchProducts } = useStore();
+
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+
   return (
-    <div className="flex w-full min-h-screen justify-center items-center">
-      <div className="flex flex-wrap w-300 min-h-full justify-center items-center gap-12 py-12">
+    <div className="flex w-full min-h-screen justify-center items-start mt-20">
+      <div className="flex flex-wrap w-320 justify-center gap-12 py-12">
         {products.map((product) => (
-          <div
+          <ProductCard
             key={product.id}
-            className="flex flex-col justify-between items-center w-60 h-70 p-4 border-2 rounded-lg"
-          >
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={160}
-              height={160}
-              className="cursor-pointer"
-            />
-            <span>{product.name}</span>
-            <span className="text-gray-600">R$ {product.price.toFixed(2)}</span>
-            <Button
-              className="flex justify-center items-center w-30 h-16 cursor-pointer rounded bg-blue-600 text-white"
-              onClick={() => addToCart(product)}
-            >
-              Adicionar
-            </Button>
-          </div>
+            id={product.id}
+            title={product.title}
+            image={product.image}
+            price={product.price}
+            quantity={product.quantity}
+          />
         ))}
       </div>
     </div>
